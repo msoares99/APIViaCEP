@@ -1,0 +1,165 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'API CEP'
+  ClientHeight = 194
+  ClientWidth = 367
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object spPESQUISA: TSpeedButton
+      Align = Right
+      Position.X = 288.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'searchtoolbutton'
+      Text = 'spPESQUISA'
+      OnClick = spPESQUISAClick
+    end
+    object edtCEP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 5
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 283.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'CEP'
+      StyledSettings = [Family, FontColor]
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 95.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object edtBAIRRO: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 3
+      ReadOnly = True
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Bairro'
+      StyledSettings = [Family, FontColor]
+    end
+    object edtNUMERO: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 2
+      ReadOnly = True
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Position.X = 256.000000000000000000
+      Position.Y = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'N'#176
+      StyledSettings = [Family, FontColor]
+    end
+  end
+  object Layout3: TLayout
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edtRUA: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 4
+      ReadOnly = True
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Margins.Top = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 337.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Rua'
+      StyledSettings = [Family, FontColor]
+    end
+  end
+  object Layout4: TLayout
+    Align = Top
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 140.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object edtCIDADE: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      ReadOnly = True
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Cidade'
+      StyledSettings = [Family, FontColor]
+    end
+    object edtUF: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 0
+      ReadOnly = True
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Position.X = 256.000000000000000000
+      Position.Y = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'UF'
+      StyledSettings = [Family, FontColor]
+    end
+  end
+end
